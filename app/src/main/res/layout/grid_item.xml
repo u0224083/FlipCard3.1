@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center">
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="50pt"
+        android:layout_height="50pt"
+        android:layout_gravity="center">
+        <ImageView android:id="@+id/cardBack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/back">
+        </ImageView>
+        <ImageView android:id="@+id/cardForward"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+        </ImageView>
+    </ViewFlipper>
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textSize="9pt"
+        android:layout_margin="15dp"/>
+</LinearLayout>
